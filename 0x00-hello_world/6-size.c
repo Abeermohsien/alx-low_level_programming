@@ -8,4 +8,4 @@ int main(void)
 	print("size of short int %d bytes\n", sizeof(short int);
 	print("size of float %d bytes\n", sizeof(float);
 	return(0);
-	}	
+}	
