@@ -1,11 +1,17 @@
 #!/bin/bash
-#include<stdio.h>
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	print("size of char %d bytes\n", sizeof(char));
-	print("size of int %d bytes\n", sizeof(int));
-	print("size of long %d bytes\n", sizeof(long int);
-	print("size of short int %d bytes\n", sizeof(short int);
-	print("size of float %d bytes\n", sizeof(float);
-	return(0);
-}	
+	 printf("size of char %d bytes\n", sizeof(char));
+        printf("size of int %d bytes\n", sizeof(int));
+        printf("size of long %d bytes\n", sizeof(long int));
+        printf("size of short int %d bytes\n", sizeof(short int));
+        printf("size of float %d bytes\n", sizeof(float));
+    return (0);
+}
