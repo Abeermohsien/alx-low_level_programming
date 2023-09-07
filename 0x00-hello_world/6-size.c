@@ -7,13 +7,9 @@
  */
 int main(void)
 {
-	int inttyp; 
-	float floattype;
-	char chartype;
-	double doubletype;
-printf("size of char: %d bytes\n", sizeof(chartype));
-printf("size of int: %d bytes\n", sizeof(inttype));
-printf("size of float: %d bytes\n", sizeof(floattype));
-printf("size of double :%d bytes\n", sizeof(doubletype));
+printf("size of a char: %d bytes\n", sizeof(char));
+printf("siz of an int: %d bytes\n", sizeof(int));
+printf("size of a long int: %d bytes\n", sizeof(long int));
+printf("size of a float: %d bytes\n", sizeof(float));
     return (0);
 }
