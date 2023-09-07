@@ -6,7 +6,11 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{pintf("size of char: %d bytes\n", sizeof(char));
+{
+	int int; 
+	float float;
+	char char;
+printf("size of char: %d bytes\n", sizeof(char));
 printf("size of int: %d bytes\n", sizeof(int));
 printf("size of long: %d bytes\n", sizeof(long int));
 printf("size of long long  int :%d bytes\n", sizeof(long long int));
