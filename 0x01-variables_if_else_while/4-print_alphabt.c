@@ -13,10 +13,17 @@
 int main(void)
 {
 char alpha = 'a';
-while (alpha <= 'z' && alpha != 'q')
+while (alpha <= 'z')
+{
+if (alpha == q || alpha == e)
+{
+alpha += 1;
+} 
+else 
 {
 putchar(alpha);
 alpha++;
+}
 }
 putchar('\n');
 return (0);
