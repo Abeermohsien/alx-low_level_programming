@@ -17,8 +17,8 @@ while (alpha <= 'z' && ALPHA <= 'Z')
 {
 putchar(alpha);
 putchar(ALPHA);
-alpha++
-ALPHA++
+alpha++;
+ALPHA++;
 }
 putchar('\n');
 return (0);
