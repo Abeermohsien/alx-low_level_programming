@@ -14,8 +14,7 @@ int main(void)
 {
 char alpha = 'a' ;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
+
  /* your code goes there */
 while (alpha <= 'z')
 {
