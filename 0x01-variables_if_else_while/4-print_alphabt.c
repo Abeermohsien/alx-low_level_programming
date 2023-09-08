@@ -18,8 +18,8 @@ while (alpha <= 'z')
 if (alpha == 'q' || alpha == 'e')
 {
 alpha += 1;
-} 
-else 
+}
+else
 {
 putchar(alpha);
 alpha++;
