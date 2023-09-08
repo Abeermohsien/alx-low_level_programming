@@ -16,9 +16,9 @@ char alpha = 'a', ALPHA = 'A';
 while (alpha <= 'z' && ALPHA <= 'Z')
 {
 putchar(alpha);
-putchar(ALPHA)
-alpha ++
-ALPHA ++
+putchar(ALPHA);
+alpha++
+ALPHA++
 }
 putchar('\n');
 return (0);
