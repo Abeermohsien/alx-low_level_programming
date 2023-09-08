@@ -27,4 +27,4 @@ alpha++;
 }
 putchar('\n');
 return (0);
-}	
+}
