@@ -12,7 +12,6 @@
  */
 int main(void)
 {
-int n;
 char alpha = 'a' ;
 
 srand(time(0));
@@ -23,7 +22,6 @@ while (alpha <= 'z')
 putchar(alpha);
 alpha++;
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
-
