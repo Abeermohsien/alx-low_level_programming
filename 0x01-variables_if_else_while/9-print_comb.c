@@ -16,7 +16,8 @@ int n;
 for (n = 0; n <= 9; n++)
 {
 putchar(48 + n);
-if (n == 9){	
+if (n == 9)
+{	
 break;
 }
 else
