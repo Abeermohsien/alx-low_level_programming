@@ -15,7 +15,7 @@ int main(void)
 char alpha = 'a';
 while (alpha <= 'z')
 {
-if (alpha == q || alpha == e)
+if (alpha == 'q' || alpha == 'e')
 {
 alpha += 1;
 } 
