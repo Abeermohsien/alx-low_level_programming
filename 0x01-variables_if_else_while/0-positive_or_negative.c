@@ -2,11 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/**
- * main function _ determines if the number is positive , negtive or zero
- */
+
 
 /* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int n;
