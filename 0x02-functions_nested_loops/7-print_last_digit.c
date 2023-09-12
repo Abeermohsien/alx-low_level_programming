@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
+ *  print_last_digit - writes the last digit
+ *  @n: digit twise
  *
  * Return: Always 0.
  */
