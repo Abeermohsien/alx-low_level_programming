@@ -12,12 +12,12 @@ if (n > 0)
 return (1);
 _putchar(43);
 }
-if (n == 0)
+else if (n == 0)
 {
 return (0);
 _putchar(48);
 }
-if (n < 0)
+else if (n < 0)
 {
 return (-1);
 _putchar(45);
