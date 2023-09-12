@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
+ * print_to_n  - writes natural numbers up to 98
+ * @n: natural number
  * Return: Always 0.
  */
 void print_to_98(int n)
@@ -35,7 +35,7 @@ break;
 }
 else
 {
-printf("%d, ",n);
+printf("%d, ", n);
 }
 }
 }
