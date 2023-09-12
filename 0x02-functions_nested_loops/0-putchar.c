@@ -1,6 +1,7 @@
 #include "main.h"
 int main()
 {
-_putchar(char* _putchar);
+char str[] = "_putchar";
+_putchar(str);
 return (0);
 }
