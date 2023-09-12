@@ -8,10 +8,10 @@
  */
 int _abs(int c)
 {
+int absv;
 if (c < 0)
 {
-int absv;
-absv = c * absv;
+absv = c * -1;
 return (absv);
 }
 return (c);
