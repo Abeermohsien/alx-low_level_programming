@@ -7,28 +7,37 @@
  */
 void print_to_98(int n)
 {
-int start;
-printf("enter anumber:");
-scanf("%d", &start);
-if (start < 98)
+if (n <= 98)
 {
-for (n = start; n <= 98; n++)
+for (; n <= 98; n++)
 {
-printf("%d, ", n);
+if (n == 98)
+{
+printf("%d", n);
+printf("\n");
+break;
 }
-}
-if (start > 98)
-{
-n = start;
-while(n >= 98)
+else
 {
 printf("%d, ", n);
-n--;
 }
 }
-if (start == 98)
+}
+else
 {
-printf("%d, ", start);
+for (; n >= 98; n--)
+{
+if (n == 98)
+{
+printf("%d", n);
+printf("\n");
+break;
 }
-return;
+else
+{
+printf("%d, ",n);
 }
+}
+}
+
+
