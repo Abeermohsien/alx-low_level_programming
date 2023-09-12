@@ -12,6 +12,6 @@ for (c = 'a'; c <= 'z'; c++)
 {
 _putchar('c');
 }
-_purchar('\n');
+_putchar('\n');
 return (0);
 }
