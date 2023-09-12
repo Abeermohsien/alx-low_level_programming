@@ -20,7 +20,7 @@ printf("%d, ", n);
 if (start > 98)
 {
 n = start;
-wlie(n >= 98)
+while(n >= 98)
 {
 printf("%d, ", n);
 n--;
