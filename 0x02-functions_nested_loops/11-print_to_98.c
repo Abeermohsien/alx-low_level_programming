@@ -7,12 +7,12 @@
  */
 void print_to_98(int n)
 {
-int i, start;
+int n, start;
 printf("enter anumber:");
 scanf("%d", &start);
-for (i = start; i <= 98; i++)
+for (n = start; n <= 98; n++)
 {
-prinf("%d, ", i);
+printf("%d, ", n);
 }
-return (0);
+return;
 }
