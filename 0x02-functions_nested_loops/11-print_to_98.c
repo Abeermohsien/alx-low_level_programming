@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_n  - writes natural numbers up to 98
+ * print_to_98  - writes natural numbers up to 98
  * @n: natural number
  * Return: Always 0.
  */
