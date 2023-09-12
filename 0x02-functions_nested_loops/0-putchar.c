@@ -2,6 +2,6 @@
 int main()
 {
 char str[] = "_putchar";
-_putchar(char* str);
+_putchar(varchar str);
 return (0);
 }
