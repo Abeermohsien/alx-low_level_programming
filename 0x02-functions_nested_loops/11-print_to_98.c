@@ -7,7 +7,7 @@
  */
 void print_to_98(int n)
 {
-int n, start;
+int start;
 printf("enter anumber:");
 scanf("%d", &start);
 for (n = start; n <= 98; n++)
