@@ -10,9 +10,25 @@ void print_to_98(int n)
 int start;
 printf("enter anumber:");
 scanf("%d", &start);
+if (start < 98)
+{
 for (n = start; n <= 98; n++)
 {
 printf("%d, ", n);
+}
+}
+if (start > 98)
+{
+n = start;
+wlie(n >= 98)
+{
+printf("%d, ", n);
+n--;
+}
+}
+if (start == 98)
+{
+printf("%d, ", start);
 }
 return;
 }
