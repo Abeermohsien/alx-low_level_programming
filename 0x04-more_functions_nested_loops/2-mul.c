@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * main - check the code
+ * mul - multibles two integers
+ * @a: integer number
+ * @b: integer number
  *
  * Return: Always 0.
  */
