@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * mul - multibles two digits
+ * @a: integer number
+ * @b: integer number
  * Return: Always 0.
  */
 int main(void)
