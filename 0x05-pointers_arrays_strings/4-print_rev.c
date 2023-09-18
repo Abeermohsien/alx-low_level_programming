@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * print_rev - print reverse of string
+ *
+ * @s: charcter pointer
+ */
+void print_rev(char *s)
+{
+int i, j;
+i = 0;
+while (*s != '\0')
+{
+i++;
+s++;
+}
+for (j = i; j > 0; j--)
+{
+_putchar(*s);
+s--;
+}
+_putchar('\n');
+}
+
