@@ -5,6 +5,7 @@
  *
  * @src: string chacters
  * @dest: string characters
+ * return - dest if correct
  */
 char *_strcpy(char *dest, char *src)
 {
