@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _puts - prints a string follow by new line 
+ * _puts - prints a string follow by new line
  *
  * @str: pointer to charcter
  */
