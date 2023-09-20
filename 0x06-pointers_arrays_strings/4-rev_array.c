@@ -1,18 +1,19 @@
 #include "main.h"
+
 /**
- * main - check the code
+ * reverse_array - switch array elements
  * @a: an array of integers
  * @n: the number of elements to swap
  *
- * Return: nothing.
+ *
  */
 void reverse_array(int *a, int n)
 {
-int i, j, temp;
-for (i = 0, j = n - 1; i < j; i++, j--)
+int i, temp;
+for (i = 0; i < n / 2; i++)
 {
-temp = a[j];
-a[j] = a[i];
-a[i] = temp;
+temp = a[i];
+a[i] = a[n - i - 1];
+a[n - i - 1] = temp;
 }
 }
