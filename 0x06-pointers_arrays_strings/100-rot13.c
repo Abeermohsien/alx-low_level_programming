@@ -8,8 +8,8 @@
 char *rot13(char *str)
 {
 int i, j;
-char d[] = "ABCDEFGHIJKLMNOPQSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char drot[] = "NOPQSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+char d[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char drot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 for (i = 0; str[i] != '\0'; i++)
 {
 for (j = 0; j < 52; j++)
