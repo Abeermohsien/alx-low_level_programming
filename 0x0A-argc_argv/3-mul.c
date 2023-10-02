@@ -20,3 +20,5 @@ else
 printf("ERROR\n");
 return (1);
 }
+return (0);
+}
