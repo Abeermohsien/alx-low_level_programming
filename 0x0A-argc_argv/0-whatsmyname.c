@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- * main - check the code
- * @argc: int 
- * @ardv: char
+/**
+ * main - prints the name of the program by new line.
+ * @argc: int
+ * @argv: char
  * Return: 0.
  */
 int main(int argc, char *argv[])
