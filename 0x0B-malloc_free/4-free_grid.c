@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * free_grid - frees te array of integers
- * @grid: int 
+ * @grid: int
  * @height: int
  *
  */
