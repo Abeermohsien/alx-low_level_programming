@@ -12,11 +12,11 @@ int size1 = 0, size2 = 0;
 int i = 0, size;
 char *m;
 if (s1 == NULL)
-	s1 = '\0';
+	s1 = "\0";
 for (; s1[size1] != '\0'; size1++)
 	;
 if (s2 == NULL)
-	s2 = '\0';
+	s2 = "\0";
 for (; s2[size2] != '\0'; size2++)
 	;
 size = size2 + size1 + 1;
