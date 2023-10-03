@@ -25,7 +25,7 @@ else
 			return (NULL);
 		}
 		for (j = 0; j < width; j++)
-			tab[i][j] = 0;
+			t[i][j] = 0;
 	}
 }
 return (t);
