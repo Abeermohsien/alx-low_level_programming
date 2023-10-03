@@ -13,13 +13,13 @@ if (str == 0)
 	return (NULL);
 for (; str[size] != '\0'; size++)
 	;
-m = malloc(size * sizeof(*str) + 1);
-if (m == 0)
+dup = malloc(size * sizeof(*str) + 1);
+if (dup == 0)
 	return (NULL);
 else
 {
 	for (; i < size; i++)
-		m[i] = str[i];
+		dup[i] = str[i];
 }
-return (m);
+return (dup);
 }
