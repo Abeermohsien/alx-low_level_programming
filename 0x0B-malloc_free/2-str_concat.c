@@ -25,9 +25,9 @@ if (m == 0)
 	return (0);
 for (; i < size; i++)
 {
-	if (i <=  size1)
+	if (i <  size1)
 		m[i] = s1[i];
-	if (i > size1)
+	if (i >= size1)
 		m[i] = s2[i - size1];
 }
 m[i] = '\0';
