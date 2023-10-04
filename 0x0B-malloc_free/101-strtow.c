@@ -33,7 +33,12 @@ char **strtow(char *str)
 if (str == NULL || *str != '\0')
 	return (NULL);
 n = counter(str);
+if (n == 1)
+	return (NULL);
 w = (char **)malloc(n *sizeof(char *));
+if (w == NULL)
+	return (NULL);
+w[n - 1] = NULL;
 while (str[i])
 {
 	if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
@@ -52,7 +57,7 @@ while (str[i])
 			return (NULL);
 		}
 		for (l = 0; l < j; l++)
-			w[m][l] = str[i + 1];
+			w[m][l] = str[i + l];
 		w[m][l] = '\0';
 		m++;
 		i += j;
