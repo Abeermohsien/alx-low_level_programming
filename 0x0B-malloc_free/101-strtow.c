@@ -29,7 +29,7 @@ return (n);
 char **strtow(char *str)
 {
 	char **w;
-	int k, l, i = 0, n = 0, m = 0;
+	int c, l, j, i = 0, n = 0, m = 0;
 if (str == NULL || *str != '\0')
 	return (NULL);
 n = counter(str);
