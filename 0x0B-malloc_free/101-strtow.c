@@ -12,7 +12,7 @@ for (i = 0; s[i] != '\0'; i++)
 {
 	if (s[i] == ' ')
 	{
-		if (s[i + 1] != '\0')
+		if (s[i + 1] != ' ' && s[i + 1] != '\0')
 		n++;
 	}
 	else if (i == 0)
@@ -29,7 +29,7 @@ return (n);
 char **strtow(char *str)
 {
 	char **w;
-	int c, l, j, i = 0, n = 0, m = 0;
+	int c, l, j, i, n = 0, m = 0;
 if (str == NULL || *str != '\0')
 	return (NULL);
 n = counter(str);
@@ -39,6 +39,7 @@ w = (char **)malloc(n *sizeof(char *));
 if (w == NULL)
 	return (NULL);
 w[n - 1] = NULL;
+i = 0;
 while (str[i])
 {
 	if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
