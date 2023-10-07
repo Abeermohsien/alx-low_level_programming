@@ -1,4 +1,4 @@
-#iclude "main.h"
+#include "main.h"
 #include <stdlib.h>
 /**
  * *string_nconcat - concats two strings
@@ -9,7 +9,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int i, m, j, k;
+char *ptr;
+unsigned int i, m, j, k;
 if (s1 == NULL)
 {
 s1 = " ";
@@ -22,11 +23,11 @@ for (i = 0; s1[i] != '\0'; i++)
 ;
 for (m = 0; s2[m] != '\0'; m++)
 ;
-int *ptr = malloc(i + n + 1);
+ptr = malloc(i + n + 1);
 if (ptr == 0)
 return (NULL);
 if (n >= m)
-n == m;
+n = m;
 for (j = 0; s1[j] != '\0'; j++)
 ptr[j] = s1[j];
 for (k = 0; k < n; k++)
