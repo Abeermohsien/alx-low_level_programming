@@ -7,15 +7,14 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int i = 0;
+unsigned int i = n;
 va_list ptr;
 va_start(ptr, n);
-while (i < n)
+while (i--)
 {
-printf("%d%s", va_arg(ptr, int), i < n ? (i < n - 1 ? separator : "") : "\n");
-i++;
+printf("%d%s", va_arg(ptr, int), i ? (separator ? separator : "") : "\n");
 }
-if (i == n)
+if (!n)
 {
 printf("\n");
 return;
