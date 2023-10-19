@@ -12,7 +12,7 @@ if (!head)
 nd = head;
 while (nd)
 {
-next = next->next;
+next = node->next;
 free(nd->str);
 free(nd);
 nd = next;
