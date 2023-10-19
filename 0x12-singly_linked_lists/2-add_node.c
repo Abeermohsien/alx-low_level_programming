@@ -1,5 +1,20 @@
 #include "lists.h"
 /**
+ * _strlength - string count
+ * @str: string
+ * Return: int
+ */
+int _strlength(char *str)
+{
+int n = 0;
+while (*str)
+{
+n++;
+str++;
+}
+return (n);
+}
+/**
  * add_node - add node
  * @head: pointer
  * @str: string
@@ -14,9 +29,9 @@ if (!str || !head)
 if (str)
 {
 hh->str = strdup(str);
-hh->len  = _strlen(hh->str);
+hh->len  = _strlength(hh->str);
 }
 hh->next = *head;
 *head = hh;
-return(hh);
+return (hh);
 }
