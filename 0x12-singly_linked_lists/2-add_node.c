@@ -29,6 +29,11 @@ if (!str || !head)
 if (str)
 {
 hh->str = strdup(str);
+if (!hh->str)
+{
+free(hh);
+return (NULL);
+}
 hh->len  = _strlength(hh->str);
 }
 hh->next = *head;
