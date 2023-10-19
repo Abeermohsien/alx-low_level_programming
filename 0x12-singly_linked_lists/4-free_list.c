@@ -15,6 +15,6 @@ while (nd)
 next = next->next;
 free(nd->str);
 free(nd);
-node = next;
+nd = next;
 }
 }
