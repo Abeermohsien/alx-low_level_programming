@@ -24,5 +24,6 @@ node = new->next;
 new->next = node->next;
 free(node);
 return (1);
+if (new == NULL)
 return (-1);
 }
