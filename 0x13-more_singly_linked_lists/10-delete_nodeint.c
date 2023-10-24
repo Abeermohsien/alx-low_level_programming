@@ -24,11 +24,5 @@ for (i = 0; i < index - 1; i++)
 node = new->next;
 new->next = node->next;
 free(node);
-return (i);
-}
-i++;
-new = node;
-node = node->next;
-}
-return (-1);
+return (1);
 }
