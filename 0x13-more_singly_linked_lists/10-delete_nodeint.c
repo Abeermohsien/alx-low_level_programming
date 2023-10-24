@@ -18,12 +18,15 @@ new = *head;
 free(new);
 return (1);
 }
-for (new = *head, i = 0; new != NULL && i < index - 1; i++)
+new = *head;
+while (new)
+{
+for (i = 0; i < index - 1; i++)
 	new = new->next;
 node = new->next;
 new->next = node->next;
 free(node);
 return (1);
-if (new == NULL)
+}
 return (-1);
 }
