@@ -26,3 +26,9 @@ new->next = node->next;
 free(node);
 return (i);
 }
+i++;
+new = node;
+node = node->next;
+}
+return (-1);
+}
