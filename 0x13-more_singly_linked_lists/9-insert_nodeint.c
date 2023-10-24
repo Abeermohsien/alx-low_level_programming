@@ -33,5 +33,6 @@ return (node);
 i++;
 new = new->next;
 }
-return (node);
+free(node);
+return (NULL);
 }
