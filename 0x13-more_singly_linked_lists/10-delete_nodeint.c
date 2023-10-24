@@ -21,11 +21,13 @@ return (1);
 new = *head;
 while (new)
 {
-for (i = 0; i < index; i++)
-	new = new->next;
-node = new->next;
-new->next = node->next;
-free(node);
+for (i = 0; i <= index; i++)
+{
+node = new;
+new = new->next;
+}
+node->next = new->next;
+free(new);
 return (1);
 }
 return (-1);
