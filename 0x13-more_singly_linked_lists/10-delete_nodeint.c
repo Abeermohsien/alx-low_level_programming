@@ -18,8 +18,7 @@ new = *head;
 free(new);
 return (1);
 }
-new = *head;
-for (i = 0; new, i < index - 1; i++)
+for (new = *head, i = 0; new != NULL && i < index - 1; i++)
 	new = new->next;
 node = new->next;
 new->next = node->next;
