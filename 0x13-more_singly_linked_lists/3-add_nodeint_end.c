@@ -20,7 +20,7 @@ else
 node = *head;
 while (node->next)
 	node = node->next;
-node->next = *new;
+node->next = new;
 }
 return (new);
 }
