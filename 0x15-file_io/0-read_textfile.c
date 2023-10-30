@@ -13,7 +13,7 @@ char buf[BUF_SIZE * 8];
 if (!filename)
 	return (0);
 p = open(filename, O_RDONLY);
-if (p = -1)
+if (p == -1)
 	return (0);
 n = read(p, &buf[0], letters);
 n = write(STDOUT_FILENO, &buf[0], n);
