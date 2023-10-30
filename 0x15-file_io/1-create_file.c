@@ -31,8 +31,8 @@ if (!filename)
 ptr = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 if (ptr == -1)
 	return (-1);
-if (len)
-	n = write(ptr, text_content, len);
+if (length)
+	n = write(ptr, text_content, length);
 close(ptr);
 return (1);
 }
