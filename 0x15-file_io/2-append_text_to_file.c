@@ -7,7 +7,7 @@
 int _strlen(char *c)
 {
 int i = 0;
-if (*c)
+if (!c)
 	return (0);
 while (*c)
 {
@@ -19,7 +19,7 @@ return (i);
 /**
  * append_text_to_file - add text to file
  * @filename: char
- * @text_context: char
+ * @text_content: char
  * Return: int
  */
 int append_text_to_file(const char *filename, char *text_content)
