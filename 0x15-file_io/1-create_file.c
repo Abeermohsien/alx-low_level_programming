@@ -34,5 +34,5 @@ if (ptr == -1)
 if (length)
 	n = write(ptr, text_content, length);
 close(ptr);
-return (1);
+return (n == length ? 1 : -1);
 }
