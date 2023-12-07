@@ -4,7 +4,7 @@
 /**
  * main - Generates
  * @argc: The number of arguments
- * @argv: An array of pointers 
+ * @argv: An array of pointers
  * Return: Always 0.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
