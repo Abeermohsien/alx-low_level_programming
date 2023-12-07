@@ -1,33 +1,31 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdio.h>                              #include <stdlib.h>
 
 /**
- * main - Generates and prints passwords for the crackme5 executable.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
- *
+ * main - Generates
+ * @argc: The number of arguments
+ * @argv: An array of pointers 
  * Return: Always 0.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	char password[7], *codex;
+	char passw[7], *cod;
 	int len = strlen(argv[1]), i, tmp;
 
-	codex = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+	cod = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 
 	tmp = (len ^ 59) & 63;
-	password[0] = codex[tmp];
+	passw[0] = cod[tmp];
 
 	tmp = 0;
 	for (i = 0; i < len; i++)
 		tmp += argv[1][i];
-	password[1] = codex[(tmp ^ 79) & 63];
+	passw[1] = cod[(tmp ^ 79) & 63];
 
 	tmp = 1;
 	for (i = 0; i < len; i++)
 		tmp *= argv[1][i];
-	password[2] = codex[(tmp ^ 85) & 63];
+	passw[2] = cod[(tmp ^ 85) & 63];
 
 	tmp = 0;
 	for (i = 0; i < len; i++)
@@ -36,18 +34,18 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 			tmp = argv[1][i];
 	}
 	srand(tmp ^ 14);
-	password[3] = codex[rand() & 63];
+	passw[3] = cod[rand() & 63];
 
 	tmp = 0;
 	for (i = 0; i < len; i++)
 		tmp += (argv[1][i] * argv[1][i]);
-	password[4] = codex[(tmp ^ 239) & 63];
+	passw[4] = cod[(tmp ^ 239) & 63];
 
 	for (i = 0; i < argv[1][0]; i++)
 		tmp = rand();
-	password[5] = codex[(tmp ^ 229) & 63];
+	passw[5] = cod[(tmp ^ 229) & 63];
 
-	password[6] = '\0';
-	printf("%s", password);
+	passw[6] = '\0';
+	printf("%s", passw);
 	return (0);
 }
