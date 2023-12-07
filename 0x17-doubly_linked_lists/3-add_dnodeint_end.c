@@ -9,7 +9,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *node = malloc(sizeof(dlistint_t)), *new;
 
-	if(!head || !node)
+	if (!head || !node)
 		return (node ? free(node), NULL : NULL);
 
 	node->n = n;
