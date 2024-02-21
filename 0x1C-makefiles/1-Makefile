@@ -1,0 +1,4 @@
+GG = gcc
+SS = main.c school.c
+all: $(SS)
+	$(GG) $(SS) -o school

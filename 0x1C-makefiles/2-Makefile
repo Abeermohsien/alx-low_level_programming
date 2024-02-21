@@ -1,0 +1,7 @@
+GG = gcc
+SS = main.c school.c
+DD = $(SS:.c*.o)
+NN = school
+
+all: $(DD)
+	$(GG) $(DD) -o $(NN)
